@@ -1,0 +1,226 @@
+/* Estilos exclusivos para tipos-inputs.html */
+
+.fieldset{
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 24px;
+    background: #f0eeee;
+    border-radius: 10px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+}
+
+.fieldset-sugerencias , .fieldset-satisfaccion {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 24px;
+    background: #f0eeee;
+    border-radius: 10px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+}
+.legend {
+    font-size: 1.5em;
+    color: #111;
+    margin-bottom: 24px;
+    text-align: center;
+    font-weight: 700;
+}
+.form-tipos-inputs {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 24px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 32px;
+    justify-content: space-between;
+}
+.input-select, .input-reset, .input-submit, .input-radio {
+    min-width: 260px;
+    background: #f3f7fa;
+    border: 1px solid #dbeafe;
+    border-radius: 8px;
+    padding: 18px 16px 12px 16px;
+    margin-bottom: 0;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+    position: relative;
+    transition: box-shadow 0.2s, border-color 0.2s;
+    width: 100%;
+}
+.input-select:hover, .input-select:focus-within ,
+.input-reset:hover, .input-reset:focus-within,
+.input-submit:hover, .input-submit:focus-within,
+.input-radio:hover, .input-radio:focus-within {
+    box-shadow: 0 2px 12px rgba(44, 62, 80, 0.10);
+    border-color: #60a5fa;
+}
+.input-select label ,.input-reset label, .input-submit label, .input-radio label {
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.2em;
+    display: block;
+    font-size: 0.98em;
+}
+.input-select select, .input-reset select, .input-submit select {
+    width: 100%;
+    padding: 0.45em 0.6em;
+    border-radius: 5px;
+    border: 1px solid #bfc9d1;
+    font-size: 0.97em;
+    margin-bottom: 0.35em;
+    background: #fff;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+}
+.input-demo {
+    flex: 1 1 320px;
+    min-width: 260px;
+    background: #f3f7fa;
+    border: 1px solid #dbeafe;
+    border-radius: 8px;
+    padding: 18px 16px 12px 16px;
+    margin-bottom: 0;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+    position: relative;
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+.input-demo:hover, .input-demo:focus-within {
+    box-shadow: 0 2px 12px rgba(44, 62, 80, 0.10);
+    border-color: #60a5fa;
+}
+.input-demo label {
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.2em;
+    display: block;
+    font-size: 0.98em;
+}
+.input-demo input,
+.input-demo select,
+.input-demo textarea {
+    width: 100%;
+    padding: 0.45em 0.6em;
+    border-radius: 5px;
+    border: 1px solid #bfc9d1;
+    font-size: 0.97em;
+    margin-bottom: 0.35em;
+    background: #fff;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+}
+.input-demo input:focus,
+.input-demo select:focus,
+.input-demo textarea:focus {
+    border-color: #2563eb;
+    outline: none;
+}
+.input-demo small {
+    display: block;
+    color: #64748b;
+    font-size: 0.92em;
+    margin-top: 0.15em;
+}
+.input-demo:hover .input-tooltip,
+.input-demo:focus-within .input-tooltip {
+    display: block;
+}
+.input-radio label{
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.2em;
+    display: inline-block;
+    font-size: 0.98em;
+}
+.input-radio input[type="radio"] {
+    width: 100px;
+}
+.nombre {
+    width: 100%;
+}
+.small , .small-button {
+    display: block;
+    color: #64748b;
+    font-size: 0.92em;
+    margin-top: 0.15em;
+}
+
+.input-reset{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+.input-submit input[type="submit"],
+.input-reset input[type="reset"] {
+    background: #059669;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 8px;
+    margin-top: 0.3em;
+    transition: background 0.2s;
+    width: 100%;
+}
+.input-demo input[type="submit"]:hover {
+    background-color: #047857;
+}
+.input-reset input[type="reset"]:hover {
+    background-color: #eab308;
+    color: #222;
+}
+
+@media (max-width: 768px) {
+    .fieldset-satisfaccion {
+        padding: 24px 16px;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .fieldset-satisfaccion .radio-group {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 5px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .fieldset-satisfaccion .radio-group label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+        font-weight: 400;
+        font-size: 0.8em;
+        min-height: 55px;
+    }
+
+    .input-demo,
+    .input-select,
+    .input-reset,
+    .input-submit,
+    .input-radio {
+        min-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 480px) {
+    .fieldset-satisfaccion {
+        padding: 16px 12px;
+    }
+
+    .fieldset-satisfaccion .radio-group label {
+        font-size: 0.7em;
+        min-height: 50px;
+    }
+
+    .fieldset-satisfaccion .radio-group {
+        gap: 3px;
+    }
+}

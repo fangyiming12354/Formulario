@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Campos en Formularios HTML</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <fieldset class="fieldset-sugerencias">
+        <legend class="legend">Formulario de Sugerencias</legend>
+        <form class="form-tipos-inputs">
+            <div class="input-select">
+                <label for="select">Categoría de sugerencia</label>
+                <select id="select" name="select" required>
+                    <option value="">Selecciona una categoría</option>
+                    <option value="mejora">Contenido</option>
+                    <option value="servicio">Servicio</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <small>Elige la categoría que mejor describa tu sugerencia.</small>
+            </div>
+            <div class="input-demo">
+                <label for="text">Correo electrónico</label>
+                <input type="text" id="text" name="text" placeholder="Antonio" required>
+                <small>Evita usar suedonimos, tiene que ser un nombre real y serio.</small>
+            </div>
+            <div class="input-demo">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                <small>Compruebe que el correo electrónico sea válido y personal.</small>
+            </div>
+            <div class="input-demo">
+                <label for="textarea">Sugerencias</label>
+                <textarea id="textarea" name="textarea" placeholder="Escribe aquí tus sugerencias..."></textarea>
+                <small>Describe con claridad y precisión tus sugerencias.</small>
+            </div>
+        </form>
+    </fieldset>
+    <fieldset class="fieldset-satisfaccion">
+        <legend class="legend">Formulario de Satisfacción</legend>
+        <form class="form-tipos-inputs">
+            <div class="input-radio">
+                <label class="nombre">Nivel de satisfacción</label>
+                <input type="radio" id="0" name="satisfaccion" value="0" required>
+                <label for="0">0</label>
+                <input type="radio" id="1" name="satisfaccion" value="1">
+                <label for="1">1</label>
+                <input type="radio" id="2" name="satisfaccion" value="2">
+                <label for="2">2</label>
+                <input type="radio" id="3" name="satisfaccion" value="3">
+                <label for="3">3</label>
+                <input type="radio" id="4" name="satisfaccion" value="4">
+                <label for="4">4</label>
+                <input type="radio" id="5" name="satisfaccion" value="5">
+                <label for="5">5</label>
+                <small class="small">Selecciona el nivel que mejor describa tu experiencia.</small>
+                <small class="small-button">0 = Muy insatisfecho, 5 = Muy satisfecho.</small>
+            </div>
+            <div class="input-demo">
+                <label for="text">Comentarios adicionales</label>
+                <input type="text" id="text" name="text" placeholder="Escribe tus comentarios aquí..." required>
+                <small>Comparte cualquier comentario adicional sobre tu experiencia.</small>
+            </div>
+        </form>
+    </fieldset>
+    <fieldset class="fieldset">
+        <legend class="legend">Acciones del Formulario</legend>
+        <form class="form-tipos-inputs">
+        <div class="input-submit">
+            <label for="submit">Enviar sugerencia</label>
+            <input type="submit" id="submit" value="Enviar Sugerencia">
+            <small>Haz clic para enviar tu sugerencia al equipo de desarrollo.</small>
+        </div>
+        <div class="input-reset">
+            <label for="reset">Limpiar formulario</label>
+            <input type="reset" id="reset" value="Restablecer">
+            <small>Limpia todos los campos del formulario.</small>
+        </div>
+        </form>
+    </fieldset>
+</body>
+</html>
